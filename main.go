@@ -119,7 +119,6 @@ func secondAPP(w http.ResponseWriter, r *http.Request) {
 	}
 	res.Result.Payload = dat
 	res.Result.Results = ArrayResult
-	fmt.Println(ArrayResult)
 	userVar2, _ := json.Marshal(res)
 
 	req, err := http.Post("http://116.203.203.76:3000/tasks/solution", "application/json", bytes.NewBuffer(userVar2))

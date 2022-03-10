@@ -46,7 +46,7 @@ func SecondSol(A []int) int {
 		arr[i] = z
 	}
 	for y, x := range arr {
-		if x == 1 {
+		if x%2 == 1 {
 			res = A[y]
 		}
 	}
